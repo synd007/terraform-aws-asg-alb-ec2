@@ -104,7 +104,7 @@ resource "aws_launch_template" "launch_config" {
     device_index = 0
     security_groups = [aws_security_group.web_sg.id]
   }
-  user_data = var.aws_launch_template_user_data
+  user_data = base64encode(var.aws_launch_template_user_data)
 
   lifecycle {
     create_before_destroy = true
