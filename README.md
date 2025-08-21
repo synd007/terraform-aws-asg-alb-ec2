@@ -2,7 +2,7 @@
 This project provisions a highly available web application on AWS using Terraform. It creates a custom VPC, subnets across availability zones, an Application Load Balancer (ALB), an Auto Scaling Group (ASG) with EC2 instances running Apache, and security groups to allow HTTP and SSH access.
 
 ### Architecture
-- VPC with CIDR 192.168.0.0/16
+- VPC 
 - 2 Public Subnets in different AZs for high availability
 - Internet Gateway + Route Table for outbound internet access
 - Security Group allowing inbound 80 (HTTP) and 22 (SSH)
