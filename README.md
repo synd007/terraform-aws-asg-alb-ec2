@@ -3,7 +3,7 @@ This project provisions a highly available web application on AWS using Terrafor
 
 ### Architecture
 - VPC with CIDR 192.168.0.0/16
-- 2 Public Subnets (AZ us-east-1a & us-east-1b) for high availability
+- 2 Public Subnets in different AZs for high availability
 - Internet Gateway + Route Table for outbound internet access
 - Security Group allowing inbound 80 (HTTP) and 22 (SSH)
 - Launch Template for EC2 instances:
